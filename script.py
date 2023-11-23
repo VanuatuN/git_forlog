@@ -36,7 +36,22 @@ def fill_lists_irrational(xval, yval, function_number):
         yval.extend(math.exp(x) for x in xval)  # y = f(x) = exp(x)
     else:
         print("Function not implemented.")
+        print_usage()
         sys.exit(1)
+
+# Stage 6: Development Branch
+
+def print_usage():
+    print("Usage: python script.py <function_number>")
+    print("Supported functions:")
+    print("  1 - f(x) = x")
+    print("  2 - f(x) = x^2 (polynomial)")
+    print("  3 - f(x) = x^3 (polynomial)")
+    print("  4 - f(x) = sin(x) (trigonometric)")
+    print("  5 - f(x) = cos(x) (trigonometric)")
+    print("  6 - f(x) = tan(x) (trigonometric)")
+    print("  7 - f(x) = exp(x) (irrational)")
+    print("  8 - f(x) = sqrt(|x|) (irrational)")
 
 
 if __name__ == "__main__":
