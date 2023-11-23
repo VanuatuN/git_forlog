@@ -61,7 +61,7 @@ if __name__ == "__main__":
     print(f"Selected function number: {function_number}")
 
     # Define x values
-    xval = np.arange(-5.0, 5.0, 0.1).tolist()
+    xval = np.arange(-3.0, 3.0, 0.1).tolist()
 
     # Initialize y values
     yval = []
