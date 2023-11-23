@@ -32,6 +32,10 @@ def fill_lists_irrational(xval, yval, function_number):
         yval.extend(math.cos(x) for x in xval)  # y = f(x) = cos(x)
     elif function_number == 6:
         yval.extend(math.tan(x) for x in xval)  # y = f(x) = tan(x)
+    elif function_number == 7:
+        yval.extend(math.exp(x) for x in xval)  # y = f(x) = exp(x)
+    elif function_number == 8:
+        yval.extend(math.sqrt(abs(x)) for x in xval)  # y = f(x) = sqrt(|x|)
     else:
         print("Function not implemented.")
         print_usage()
